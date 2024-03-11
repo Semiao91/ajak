@@ -1,0 +1,789 @@
+.dataFlowControllerChild {
+  width: 1920px;
+  height: 800px;
+  position: relative;
+  background-color: var(--color-white);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.valueTransformer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gray-300);
+  z-index: 3;
+}
+.stayAheadIn {
+  height: 84px;
+  width: 798px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 42px;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 4;
+}
+.loopNode {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(--color-gray-400);
+  align-self: stretch;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-21xl) var(--padding-xs);
+  box-sizing: border-box;
+  font-family: var(--font-roboto);
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  min-width: 250px;
+  z-index: 4;
+}
+.splitNode {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: var(--color-white);
+  z-index: 4;
+}
+.mergeNode {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0 0;
+}
+.iHaveRead {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  min-width: 291px;
+  max-width: 100%;
+  z-index: 4;
+}
+.decisionNode,
+.sequenceNode {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.decisionNode {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 0 20px;
+}
+.sequenceNode {
+  flex: 1;
+  flex-direction: column;
+  gap: 29px 0;
+  min-width: 323px;
+}
+.outputGateChild {
+  height: 68px;
+  width: 181px;
+  position: relative;
+  background-color: var(--color-chocolate-100);
+  display: none;
+}
+.subscribe {
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: 0.01em;
+  line-height: 42px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: left;
+  z-index: 5;
+}
+.outputGate {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-14xl) var(--padding-2xs)
+    var(--padding-16xl);
+  background-color: var(--color-chocolate-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 4;
+}
+.outputGate:hover {
+  background-color: var(--color-chocolate-200);
+}
+.conditionalNode {
+  width: 705px;
+  justify-content: flex-start;
+  gap: 0 27px;
+  min-width: 705px;
+  max-width: 100%;
+  font-size: var(--font-size-xl);
+}
+.conditionalNode,
+.filter,
+.splitter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.splitter {
+  flex: 1;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.filter {
+  width: 1633px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs);
+}
+.calculator,
+.expander,
+.filter {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.calculator {
+  height: 1px;
+  flex: 1;
+  position: relative;
+  border-top: 1px solid var(--color-gray-500);
+  z-index: 4;
+}
+.expander {
+  width: 1632px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-3xl) 0;
+}
+.controllerChild {
+  height: 141.4px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+.controller {
+  width: 227.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+}
+.loremIpsumDolor {
+  align-self: stretch;
+  height: 160px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 4;
+}
+.filterBank,
+.switchboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.switchboard {
+  align-self: stretch;
+  gap: 42.6px 0;
+}
+.filterBank {
+  flex: 1;
+  min-width: 262px;
+  min-height: 404px;
+  max-width: 100%;
+}
+.ajaksTowing {
+  margin: 0;
+  height: 21px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 4;
+}
+.aboutUs,
+.blog,
+.getInTouch,
+.home,
+.ourServices {
+  margin: 0;
+}
+.homeAboutUsContainer {
+  width: 141px;
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: -0.02em;
+  line-height: 50px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 4;
+}
+.counter,
+.selector {
+  display: flex;
+  justify-content: flex-start;
+}
+.counter {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 46px 0;
+  min-width: 195px;
+  font-size: var(--font-size-11xl);
+}
+.selector {
+  width: 628px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0 30px;
+  min-width: 628px;
+  max-width: 100%;
+}
+.contactUs {
+  margin: 0;
+  height: 21px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 4;
+}
+.solarpointOnMapPerspectiveIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.e10thAve {
+  align-self: stretch;
+  height: 13px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 4;
+}
+.treeFilter,
+.treeSplitter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.treeFilter {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+  min-width: 192px;
+}
+.treeSplitter {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 0 13px;
+}
+.solarcallChatRoundedBoldIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.div {
+  align-self: stretch;
+  height: 13px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 4;
+}
+.mergerTree,
+.treeSplitter1,
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+  box-sizing: border-box;
+  min-width: 192px;
+}
+.mergerTree,
+.treeSplitter1 {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 0 13px;
+}
+.mergerTree {
+  flex-direction: column;
+  gap: 22px 0;
+}
+.storeHours {
+  margin: 0;
+  width: 195px;
+  height: 21px;
+  position: relative;
+  font-size: var(--font-size-11xl);
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 4;
+}
+.solarclockCircleBoldIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 4;
+}
+.mondaySunday {
+  align-self: stretch;
+  height: 13px;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 4;
+}
+.treeLoop {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+  min-width: 192px;
+}
+.converter,
+.splitter1,
+.treeController,
+.treeLoop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.treeController {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 0 13px;
+}
+.converter,
+.splitter1 {
+  flex-direction: column;
+}
+.splitter1 {
+  align-self: stretch;
+  gap: 38px 0;
+  font-size: var(--font-size-lg);
+}
+.converter {
+  width: 333px;
+  gap: 64px 0;
+  min-width: 333px;
+  max-width: 100%;
+}
+.followUs {
+  margin: 0;
+  align-self: stretch;
+  height: 21px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.formulaSolverIcon,
+.formulaSolverIcon1 {
+  height: 26px;
+  width: 27px;
+  position: relative;
+  min-height: 26px;
+  z-index: 4;
+}
+.formulaSolverIcon1 {
+  width: 31px;
+}
+.linkManager {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.layerStackIcon,
+.sizeTransformerIcon {
+  height: 29px;
+  width: 30px;
+  position: relative;
+  z-index: 4;
+}
+.layerStackIcon {
+  width: 32px;
+  height: 21px;
+}
+.colorPicker,
+.positionAdjustor {
+  display: flex;
+  align-items: flex-start;
+}
+.positionAdjustor {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.colorPicker {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.groupingControllerIcon {
+  width: 30px;
+  height: 29px;
+  position: relative;
+  z-index: 4;
+}
+.frameOrganizer,
+.imageProcessor,
+.shapeAssembler {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameOrganizer {
+  align-self: stretch;
+  gap: 24px 0;
+}
+.imageProcessor,
+.shapeAssembler {
+  width: 94px;
+  gap: 33px 0;
+}
+.shapeAssembler {
+  width: 177px;
+  gap: 76px 0;
+  min-width: 177px;
+}
+.mapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.mapper,
+.sorter,
+.transformer {
+  display: flex;
+  max-width: 100%;
+}
+.transformer {
+  width: 610px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 610px;
+  min-height: 317px;
+  font-size: var(--font-size-11xl);
+}
+.sorter {
+  width: 1475px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.ruler {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  border-top: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  z-index: 4;
+}
+.termsOfUse {
+  flex: 1;
+  display: inline-block;
+  min-width: 83px;
+}
+.privacy,
+.termsOfUse {
+  position: relative;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.cookiePolicy {
+  flex: 1;
+  display: inline-block;
+  min-width: 86px;
+}
+.cookiePolicy,
+.sitemap {
+  position: relative;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.gridGenerator {
+  width: 504px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0 29.7px;
+  max-width: 100%;
+}
+.ajaksTowing1 {
+  position: relative;
+  letter-spacing: 0.02em;
+  color: var(--color-gray-100);
+  z-index: 4;
+}
+.guidesManager {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.aligner,
+.comparator,
+.dataFlowController,
+.distributor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.distributor {
+  flex: 1;
+  flex-direction: column;
+  gap: 38px 0;
+}
+.aligner,
+.comparator,
+.dataFlowController {
+  align-self: stretch;
+}
+.aligner {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-12xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+}
+.comparator,
+.dataFlowController {
+  flex-direction: column;
+  gap: 41px 0;
+  font-size: var(--font-size-lg);
+}
+.dataFlowController {
+  background-color: var(--color-white);
+  align-items: flex-end;
+  padding: var(--padding-21xl) var(--padding-128xl) var(--padding-15xl)
+    var(--padding-91xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: 26px 0;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1800px) {
+  .conditionalNode {
+    flex: 1;
+  }
+  .splitter {
+    flex-wrap: wrap;
+  }
+  .selector,
+  .transformer {
+    flex: 1;
+  }
+  .sorter {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .conditionalNode,
+  .selector {
+    min-width: 100%;
+  }
+  .guidesManager {
+    flex-wrap: wrap;
+  }
+  .dataFlowController {
+    padding-left: var(--padding-36xl);
+    padding-right: var(--padding-54xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 900px) {
+  .conditionalNode {
+    flex-wrap: wrap;
+  }
+  .filterBank {
+    min-height: auto;
+  }
+  .ajaksTowing {
+    font-size: var(--font-size-5xl);
+    line-height: 48px;
+  }
+  .counter {
+    flex: 1;
+  }
+  .selector {
+    flex-wrap: wrap;
+  }
+  .contactUs,
+  .storeHours {
+    font-size: var(--font-size-5xl);
+    line-height: 48px;
+  }
+  .converter {
+    flex: 1;
+  }
+  .followUs {
+    font-size: var(--font-size-5xl);
+    line-height: 48px;
+  }
+  .shapeAssembler {
+    flex: 1;
+  }
+  .mapper {
+    flex-wrap: wrap;
+  }
+  .transformer {
+    min-width: 100%;
+  }
+  .gridGenerator {
+    flex-wrap: wrap;
+  }
+  .distributor {
+    gap: 19px 0;
+  }
+  .comparator {
+    gap: 20px 0;
+  }
+  .dataFlowController {
+    padding: var(--padding-7xl) var(--padding-17xl) var(--padding-3xl)
+      var(--padding-8xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stayAheadIn {
+    font-size: var(--font-size-2xl);
+    line-height: 34px;
+  }
+  .iHaveRead {
+    font-size: var(--font-size-base);
+  }
+  .decisionNode {
+    flex-wrap: wrap;
+  }
+  .subscribe {
+    font-size: var(--font-size-base);
+    line-height: 34px;
+  }
+  .switchboard {
+    gap: 21px 0;
+  }
+  .ajaksTowing,
+  .contactUs {
+    font-size: var(--font-size-lg);
+    line-height: 36px;
+  }
+  .treeSplitter,
+  .treeSplitter1 {
+    flex-wrap: wrap;
+  }
+  .storeHours {
+    font-size: var(--font-size-lg);
+    line-height: 36px;
+  }
+  .treeController {
+    flex-wrap: wrap;
+  }
+  .splitter1 {
+    gap: 19px 0;
+  }
+  .converter {
+    gap: 32px 0;
+  }
+  .followUs {
+    font-size: var(--font-size-lg);
+    line-height: 36px;
+  }
+  .ajaksTowing1,
+  .cookiePolicy,
+  .privacy,
+  .sitemap,
+  .termsOfUse {
+    font-size: var(--font-size-base);
+  }
+  .dataFlowController {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
